@@ -54,11 +54,11 @@ function removeFromCart(item) {
     }
   }
   if(itemObject) {
-      let indexOfItem = getCart().indexOf(itemObject);
-      getCart().splice(indexOfItem, 1);
-    } else {
-      return "That item is not in your cart."
-    }
+    let indexOfItem = getCart().indexOf(itemObject);
+    getCart().splice(indexOfItem, 1);
+  } else {
+    return "That item is not in your cart."
+  }
 }
 
 function placeOrder(cardNumber) {
